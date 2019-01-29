@@ -14,13 +14,12 @@ var burger = {
     update: function(vals, cb) {
         orm.updateOne("burgers", "devoured", true , vals, function(res){
             cb(res);
-        })
-    },
-
+        });
+    }
 }
 
 // burger.all("burgers");
 // burger.update(1);
 // burger.all("burgers")
 
-module.exports = burger;
+module.exports = burger;  
