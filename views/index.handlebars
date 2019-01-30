@@ -1,5 +1,39 @@
-<div class="container">
-    <h1>Burgers</h1>
+<div class="container text-center">
+
+    <div class="row justify-content-md-center">
+        <h1>Let's Eat Burgers!</h1>
+    </div>
+
+    <br>
+    <img src="assets/img/cartoon-burger-png-3.png" alt="Burger" width="150">
+
+
+
+    <div class="row">
+        <div class="col-md">
+            <h2>Add a Burger:</h2>
+        </div>
+    </div>
+
+
+    <div class="col-md mx-auto">
+        <form class="create-form">
+
+            <div class="form-group">
+                <label for="burger_name">Burger:</label>
+                <input type="text" id="burger_name" name="name">
+            </div>
+
+
+            <button type="submit">Add Burger</button>
+        </form>
+    </div>
+
+
+
+<div class="row">
+    <div class="col-md-6">
+         <h1>Burgers To Eat!</h1>
 
     <ul>
         {{#each burgers}}
@@ -8,8 +42,9 @@
         {{/unless}}
         {{/each}}
     </ul>
-
-    <h2>Devoured Burgers</h2>
+    </div>
+    
+    <div class="col-md-6"><h2>Devoured Burgers</h2>
 
     <ul>
         {{#each burgers}}
@@ -17,18 +52,8 @@
         {{> burgers/devoured-burger devoured=false}}
         {{/if}}
         {{/each}}
-    </ul>
-
-    <h2>Add a Burger</h2>
-    <form class="create-form">
-
-        <div class="form-group">
-            <label for="burger_name">Burger:</label>
-            <input type="text" id="burger_name" name="name">
-        </div>
-
-
-        <button type="submit">Add Burger</button>
-    </form>
-
+    </ul></div>
+    
+</div>
+   
 </div>
