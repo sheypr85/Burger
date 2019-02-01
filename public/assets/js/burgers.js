@@ -14,10 +14,15 @@ $(function() {
   $('.create-form').on('submit', function(event) {
     event.preventDefault();
 
-    let newBurger = {
-      burgerName: $('#burger_name').val().trim(),
-    };
+      burgerName = $('#burger_name').val().trim(),
+    
+    console.log(newBurger)
 
+    if (burgerName != '')  {
+      var newBurger = {
+        burgerName
+      };
+      
     $.ajax('/api/burgers', {
       type: 'POST',
       data: newBurger,
@@ -27,5 +32,8 @@ $(function() {
           location.reload();
         }
     );
+      } else {
+        alert("You must enter a burger name");
+      }
   });
 });
