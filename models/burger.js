@@ -18,8 +18,4 @@ var burger = {
     }
 }
 
-// burger.all("burgers");
-// burger.update(1);
-// burger.all("burgers")
-
 module.exports = burger;  
