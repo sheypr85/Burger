@@ -1,4 +1,4 @@
-# Burger-Node Application
+# Eat-da-Burger-Node Application
 
 Burger Restaurant App - MySQL, Express, Handlebars, ORM
 
